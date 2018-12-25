@@ -2,8 +2,10 @@
 
 Android app made to exercise the usage of kotlin
 
-![Counter screen](screenshots/counter_screen.jpg)
-![Random screen](screenshots/random_screen.jpg)
+<p align="middle">
+	<img src="screenshots/counter_screen.jpg" width="300">
+	<img src="screenshots/random_screen.jpg" width="300">
+</p>
 
 # Features
 
