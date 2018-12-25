@@ -2,8 +2,8 @@
 
 Android app made to exercise the usage of kotlin
 
-![Counter screen](/screenshots/counter_screen.jpg)
-![Random screen](/screenshots/random_screen.jpg)
+![Counter screen](screenshots/counter_screen.jpg)
+![Random screen](screenshots/random_screen.jpg)
 
 # Features
 
