@@ -20,6 +20,10 @@
         <item name="android:textColor">@android:color/white</item>
     </style>
 
+    <style name="BigButtonStyle" parent="DefaultButtonStyle">
+        <item name="android:textSize">@dimen/buttonTextSizeLarge</item>
+    </style>
+
     <style name="TextLarge" parent="DefaultTextStyle">
         <item name="android:fontFamily">sans-serif</item>
         <item name="android:textSize">@dimen/textSizeLarge</item>

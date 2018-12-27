@@ -2,5 +2,6 @@
 <resources>
     <dimen name="textSizeLarge">100sp</dimen>
     <dimen name="textSizeBody">24sp</dimen>
+    <dimen name="buttonTextSizeLarge">30sp</dimen>
     <dimen name="space24dp">24dp</dimen>
 </resources>
