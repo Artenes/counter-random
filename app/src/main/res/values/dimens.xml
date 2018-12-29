@@ -4,4 +4,7 @@
     <dimen name="textSizeBody">24sp</dimen>
     <dimen name="buttonTextSizeLarge">30sp</dimen>
     <dimen name="space24dp">24dp</dimen>
+    <dimen name="buttonCorners">5dp</dimen>
+    <dimen name="buttonBorder">2dp</dimen>
+
 </resources>

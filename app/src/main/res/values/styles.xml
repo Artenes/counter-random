@@ -18,6 +18,7 @@
 
     <style name="DefaultButtonStyle" parent="Widget.AppCompat.Button.Borderless">
         <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/thin_border_ripple_button</item>
     </style>
 
     <style name="BigButtonStyle" parent="DefaultButtonStyle">

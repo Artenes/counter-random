@@ -26,19 +26,20 @@ class MainActivity : AppCompatActivity() {
         counterTextView.text = counter.toString()
     }
 
-    fun vibrate() {
-        getSystemService(Vibrator::class.java).vibrate(100)
+    fun vibrate(time: Long) {
+        getSystemService(Vibrator::class.java).vibrate(time)
     }
 
     fun onCountClick(view: View) {
         counter++
         updateCouterTextView()
-        vibrate()
+        vibrate(100L)
     }
 
     fun onClearClick(view: View) {
         counter = 0
         updateCouterTextView()
+        vibrate(700L)
     }
 
     fun onRandomClick(view: View) {
