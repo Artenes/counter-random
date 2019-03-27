@@ -1,49 +1,51 @@
 package io.github.artenes.counter
 
-import android.content.res.Configuration
 import android.os.Bundle
-import android.os.VibrationEffect
 import android.os.Vibrator
-import android.support.v7.app.AppCompatActivity
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    var counter: Int = 0
+    private lateinit var viewModel: CounterViewModel
+
+    private val onCounterChange = Observer<Int> { count ->
+
+        counterTextView.text = count.toString()
+
+    }
+
+    private val onVibrate = Observer<Long> { duration ->
+
+        getSystemService(Vibrator::class.java).vibrate(duration)
+
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        viewModel = ViewModelProviders.of(this).get(CounterViewModel::class.java)
     }
 
-    override fun onResume() {
-        super.onResume()
-        updateCouterTextView()
-    }
-
-    fun updateCouterTextView() {
-        counterTextView.text = counter.toString()
-    }
-
-    fun vibrate(time: Long) {
-        getSystemService(Vibrator::class.java).vibrate(time)
+    override fun onStart() {
+        super.onStart()
+        viewModel.counter.observe(this, onCounterChange)
+        viewModel.vibrationDuration.observe(this, onVibrate)
     }
 
     fun onCountClick(view: View) {
-        counter++
-        updateCouterTextView()
-        vibrate(100L)
+        viewModel.count()
     }
 
     fun onClearClick(view: View) {
-        counter = 0
-        updateCouterTextView()
-        vibrate(700L)
+        viewModel.reset()
     }
 
     fun onRandomClick(view: View) {
-        RandomNumberActivity.start(this, counter)
+        RandomNumberActivity.start(this, viewModel.counter.value as Int)
     }
 
 }
