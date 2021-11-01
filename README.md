@@ -1,14 +1,17 @@
-# Counter with random number generator
+# Conpi
 
-Android app made to exercise the usage of kotlin
+Counter app with random number generator.
 
 <p align="middle">
-	<img src="screenshots/counter_screen.jpg" width="300">
-	<img src="screenshots/random_screen.jpg" width="300">
+	<img src="screenshots/screen01.jpg" width="200">
+	<img src="screenshots/screen02.jpg" width="200">
+	<img src="screenshots/screen03.jpg" width="200">
 </p>
 
 # Features
 
-- increate the counter by one after each click
+- increase the counter by one after each click
+- counter with animation
+- counter with vibration feedback
 - clear counter
 - generate random number from 0 up to (including) the counter value
