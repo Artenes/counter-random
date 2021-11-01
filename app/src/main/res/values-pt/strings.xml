@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="clear">Limpar</string>
+
+    <string name="count">Contar</string>
+    <string name="random">Aleatório</string>
+    <string name="here_is_a_random_number">Aqui está um número entre 0 e %1d</string>
+</resources>

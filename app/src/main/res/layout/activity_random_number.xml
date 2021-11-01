@@ -5,7 +5,8 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".RandomNumberActivity">
+        tools:context=".RandomNumberActivity"
+        android:background="@drawable/gradient_background">
 
     <TextView
             style="@style/TextLarge"
@@ -25,5 +26,6 @@
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="@dimen/space24dp" android:layout_marginEnd="@dimen/space24dp"
+            android:textAlignment="center"
             tools:text="Here is a random number between 0 and 20"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

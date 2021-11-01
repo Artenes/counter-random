@@ -1,5 +1,6 @@
 package io.github.artenes.counter
 
+import android.animation.ValueAnimator
 import android.os.Bundle
 import android.os.Vibrator
 import android.view.View
@@ -13,9 +14,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var viewModel: CounterViewModel
 
     private val onCounterChange = Observer<Int> { count ->
-
         counterTextView.text = count.toString()
-
+        TickAnimation(counterTextView)
     }
 
     private val onVibrate = Observer<Long> { duration ->

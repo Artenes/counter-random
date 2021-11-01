@@ -5,6 +5,6 @@
     <dimen name="buttonTextSizeLarge">30sp</dimen>
     <dimen name="space24dp">24dp</dimen>
     <dimen name="buttonCorners">5dp</dimen>
-    <dimen name="buttonBorder">2dp</dimen>
+    <dimen name="buttonBorder">1dp</dimen>
 
 </resources>

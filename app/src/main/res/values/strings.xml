@@ -1,9 +1,8 @@
 <resources>
-    <string name="app_name">Counter</string>
+    <string name="app_name" translatable="false">Conpi</string>
     <string name="clear">Clear</string>
 
     <string name="count">Count</string>
     <string name="random">Random</string>
-    <string name="toast_clicked">Toast clicked</string>
     <string name="here_is_a_random_number">Here is a random number between 0 and %1d</string>
 </resources>
