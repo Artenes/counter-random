@@ -3,9 +3,9 @@
 Counter app with random number generator.
 
 <p align="middle">
-	<img src="screenshots/screen01.jpg" width="200">
-	<img src="screenshots/screen02.jpg" width="200">
-	<img src="screenshots/screen03.jpg" width="200">
+	<img src="screenshots/screen01.png" width="200">
+	<img src="screenshots/screen02.png" width="200">
+	<img src="screenshots/screen03.png" width="200">
 </p>
 
 # Features
