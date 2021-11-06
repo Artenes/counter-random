@@ -10,6 +10,10 @@ Counter app with random number generator.
 	<img src="screenshots/screen03.png" width="200">
 </p>
 
+# Vide demo
+
+[Watch demo on youtube](https://youtu.be/zfJPMUP24mk)
+
 # Features
 
 - increase the counter by one after each click
